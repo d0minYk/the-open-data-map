@@ -1,0 +1,17 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="contact-us"] {
+
+    .info {
+        padding: 10px 15px 15px 15px;
+        font-weight: 0.9em;
+        background: whitesmoke;
+        margin: 15px;
+        border-radius: 4px;
+    }
+
+    .submit-btn {
+        margin: 15px;
+    }
+
+}

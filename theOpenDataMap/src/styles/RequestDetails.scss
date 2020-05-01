@@ -1,0 +1,21 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="request-details"] {
+
+    .fields {
+        padding: 0 15px 15px 15px;
+    }
+
+    h3 {
+        font-size: 0.9em;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .save-btn, .unassign-btn, .assign-btn {
+        margin-top: 15px;
+    }
+
+}

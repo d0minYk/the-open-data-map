@@ -1,0 +1,36 @@
+ion-modal[data-modal="share-modal"] {
+
+    ion-content {
+
+        &>div {
+            padding: 15px 15px 15px 15px;
+
+            .platforms {
+                display: flex;
+                flex-wrap: wrap;
+                // justify-content: space-between;
+                margin-bottom: 12px;
+
+                button {
+
+                    svg {
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 8px;
+                        margin-bottom: 8px;
+                        border-radius: 100%;
+                    }
+
+                }
+
+            }
+
+            &>ion-button {
+                margin: 15px 0;
+            }
+
+        }
+
+    }
+
+}

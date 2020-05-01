@@ -1,0 +1,33 @@
+.path-builder-modal {
+
+    .map-container {
+        height: calc(100% - 400px);
+    }
+
+    .list {
+        height: 400px;
+        overflow: auto;
+        padding-bottom: 100px;
+    }
+
+    .info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 5px;
+        padding: 12px;
+        z-index: 2;
+        margin: 15px;
+        font-weight: 300;
+        font-size: 0.9em;
+        background-color: rgba(255,255,255, 0.9);
+    }
+
+    .path-builder-marker {
+        width: 12px;
+        height: 12px;
+        border-radius: 100%;
+        background-color: white;
+    }
+
+}

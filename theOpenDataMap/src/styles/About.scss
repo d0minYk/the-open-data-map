@@ -1,0 +1,19 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="about"] {
+
+    ion-item.head {
+        margin: 12px 0 4px 0;
+
+        ion-label {
+            padding-left: 0;
+            font-weight: 500;
+        }
+
+    }
+
+    ion-label {
+        padding-left: 10px;
+    }
+
+}

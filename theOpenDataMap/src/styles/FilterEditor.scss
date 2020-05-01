@@ -1,0 +1,91 @@
+@import "./Colors.scss";
+
+ion-modal[data-modal="filter-editor"] {
+
+    .save-btn, .delete-btn {
+        margin: 15px;
+    }
+
+    .rules {
+
+    }
+
+    .error-msg {
+        margin: 15px;
+    }
+
+    .color-picker {
+        margin-top: 16px;
+        padding: 0 4px;
+
+        &>div {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+            border: 3px solid transparent;
+
+            &[data-selected="true"] {
+                border: 3px solid white;
+                box-shadow: $default-box-shadow;
+            }
+
+        }
+
+    }
+
+    ion-searchbar {
+        padding-inline-start: 0 !important;
+    }
+
+    .icon-picker {
+        max-height: 240px;
+        overflow: auto;
+        margin-top: 8px;
+        // flex-wrap: wrap;
+        // justify-content: center;
+        padding: 0 12px 0 0;
+        // display: flex;
+
+        &>div {
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            margin-right: 8px;
+            margin-bottom: 8px;
+            display: inline-block;
+            border: 3px solid transparent;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            i {
+                display: inline-block;
+            }
+
+            i::before {
+                font-size: 1rem !important;
+            }
+
+            &[data-selected="true"] {
+                border: 3px solid white;
+                box-shadow: $default-box-shadow;
+            }
+
+        }
+
+    }
+
+    .rules {
+        width: 100%;
+
+        .queryBuilder {
+            margin: 5px 0 15px 0;
+        }
+
+    }
+
+}

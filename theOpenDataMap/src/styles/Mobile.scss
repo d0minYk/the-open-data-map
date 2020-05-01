@@ -1,0 +1,50 @@
+@import 'Colors.scss';
+
+ion-app[data-size="small"], html[data-size="small"]
+{
+
+    .new-post-drawer {
+
+        .post-options {
+            padding-bottom: 16px;
+        }
+
+        .swipeable-drawer-body {
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+
+    }
+
+}
+
+ion-app[data-os="ios"] {
+
+    .ion-page[data-page="directory"],
+    // .ion-page[data-page="profile"],
+    .ion-page[data-page="dataset-content"],
+    {
+
+        .header {
+            padding-top: 52px;
+        }
+
+    }
+
+    .splash, .login {
+        padding-top: env(safe-area-inset-top) !important;
+
+        &>img, &>.header>img {
+            padding-top: 40px !important;
+        }
+
+        .stats {
+            height: calc(100% - 208px) !important;
+        }
+
+        .footer {
+            margin-bottom: env(safe-area-inset-bottom);
+        }
+
+    }
+
+}

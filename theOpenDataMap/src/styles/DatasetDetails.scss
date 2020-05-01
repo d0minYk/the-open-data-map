@@ -1,0 +1,69 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="dataset-details"] {
+
+    ion-header:after {
+        background-image: none !important;
+    }
+
+    ion-toolbar {
+        --background: #5F6CAF !important;
+        --border-width: 0 !important;
+        color: white;
+
+        button {
+            color: white;
+        }
+
+        ion-back-button {
+            --color: white;
+        }
+
+    }
+
+    ion-content>.header {
+        background-color: $purple-primary;
+        box-shadow: $default-box-shadow-2;
+
+        .quick-stats {
+            padding-top: 8px;
+        }
+
+    }
+
+    .details {
+        padding: 0 15px 15px 15px;
+
+        .field {
+
+
+
+        }
+
+        h3 {
+            font-size: 0.9em;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        ion-chip {
+
+            span {
+                margin-left: 6px;
+            }
+
+        }
+
+    }
+
+    .options {
+
+        ion-button {
+            margin: 15px 0;
+        }
+
+    }
+
+}

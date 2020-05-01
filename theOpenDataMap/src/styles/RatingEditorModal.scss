@@ -1,0 +1,17 @@
+@import "./Colors.scss";
+
+ion-modal.rating-editor-modal {
+
+    .rating {
+
+        .stars {
+            margin-bottom: 15px;
+        }
+
+        ion-textarea {
+            height: calc(100% - 56px);
+        }
+
+    }
+
+}

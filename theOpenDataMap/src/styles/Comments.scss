@@ -1,0 +1,83 @@
+@import "./Colors.scss";
+
+.comments-container {
+
+    &>.header {
+        display: flex;
+
+        h3 {
+            flex-basis: 100%;
+        }
+
+        ion-icon {
+            font-size: 1.6rem;
+            position: relative;
+            top: 10px;
+            cursor: pointer;
+        }
+
+    }
+
+    .empty {
+        background-color: $light-grey-3;
+        border-radius: 12px;
+        padding: 12px;
+        text-align: center;
+    }
+
+    .comments {
+
+        .comment {
+            background-color: $light-grey-3;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 12px;
+
+            .user-badge {
+                margin-top: 0;
+            }
+
+            .body {
+                margin-top: 12px;
+                font-weight: 500;
+                font-size: 0.9rem;
+            }
+
+            ion-textarea {
+                background-color: $light-grey-4;
+                margin-top: 12px;
+                border-radius: 4px;
+
+                textarea {
+                    padding: 15px !important;
+                }
+
+            }
+
+            .options {
+                margin-top: 4px;
+
+                button {
+                    font-size: 0.9rem;
+                    display: flex;
+                    align-items: center;
+                    padding: 0;
+                    cursor: pointer;
+
+                    ion-icon {
+                        margin-right: 2px;
+                    }
+
+                    label {
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

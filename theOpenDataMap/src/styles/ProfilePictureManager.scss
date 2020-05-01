@@ -1,0 +1,80 @@
+@import "./Colors.scss";
+
+ion-modal[data-modal="profile-picture-manager"] {
+
+    .profile-picture-wrapper {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+
+        .profile-picture {
+
+            .image-cropper {
+
+                &>div {
+                    margin: auto;
+
+                    // &>div {
+                    //     height: 100% !important;
+                    //     width: 100% !important;
+                    // }
+
+                }
+
+            }
+
+        }
+
+        .options {
+            margin: auto;
+            padding: 15px 15px 0 15px;
+            text-align: center;
+
+            button {
+                border-radius: 5px;
+                padding: 12px;
+                background-color: whitesmoke;
+                margin-right: 12px;
+            }
+
+        }
+
+    }
+
+    .cropper-view-box {
+        border-radius: 100%;
+    }
+
+    // .image-cropper {
+    //
+    //     .cropper-crop-box {
+    //         display: none;
+    //     }
+    //
+    //     .cropper-drag-box {
+    //         opacity: 0;
+    //     }
+    //
+    //     .cropper-crop-box {
+    //         // display: none;
+    //         height: calc(100%) !important;
+    //         width: calc(100%) !important;
+    //         left: 0 !important;
+    //         top: 0 !important;
+    //         right: auto !important;
+    //         bottom: auto !important;
+    //         transform: translateX(0px) translateY(0px) !important;
+    //
+    //         .cropper-view-box {
+    //
+    //             img {
+    //
+    //             }
+    //
+    //         }
+    //
+    //     }
+    //
+    // }
+
+}

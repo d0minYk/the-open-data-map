@@ -1,0 +1,152 @@
+@import "./Colors.scss";
+
+.user-badge {
+    margin-top: 8px;
+    cursor: pointer;
+
+    &>div {
+
+        .photo {
+            flex-basis: 32px;
+            width: 32px;
+            height: 32px;
+            overflow: hidden;
+            border-radius: 100%;
+            background-color: $blue-primary;
+
+            &.loading {
+                background-color: unset;
+            }
+
+            img {
+                height: 100%;
+                max-width: unset;
+            }
+
+            .initial {
+                text-align: center;
+                text-transform: uppercase;
+                position: relative;
+                top: 6px;
+                left: 0px;
+                color: white;
+            }
+
+        }
+
+        &>.list-photo {
+
+            .photo {
+                width: 48px;
+                height: 48px;
+                flex-basis: 48px;
+
+                .initial {
+                    top: 13px;
+                }
+
+            }
+
+        }
+
+        &>.photo-username, &>.dataset {
+            font-weight: 700;
+            display: flex;
+
+            .name {
+                flex-basis: calc(100% - 32px);
+                padding-left: 12px;
+                color: black;
+                display: flex;
+                align-items: center;
+                // white-space: nowrap;
+                max-height: 32px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+        }
+
+        &>.photo-username-date {
+            font-weight: 700;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            .side {
+                flex-basis: calc(100% - 32px);
+                padding-left: 8px;
+                // display: flex;
+                align-items: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                .name {
+                    font-size: 0.96rem;
+                }
+
+                .date {
+                    // padding-left: 12px;
+                    font-weight: 300;
+                    font-size: 0.72rem;
+                    margin-top: 2px;
+                }
+
+            }
+
+            .initial {
+                top: 8px;
+            }
+
+        }
+
+        &>.photo-username-subtext {
+            font-weight: 700;
+            text-align: center;
+            width: 128px;
+            display: inline-block;
+
+            .photo {
+                width: 128px;
+                height: 128px;
+                border-radius: 8px;
+                margin-bottom: 8px;
+
+                .initial {
+                    top: 52px;
+                }
+
+            }
+
+            .name {
+                align-items: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-size: 0.9em;
+                margin-bottom: 4px;
+                padding: 0 8px;
+            }
+
+            .subtext {
+                font-weight: 500;
+                font-size: 0.86em;
+                padding: 0 8px;
+            }
+
+        }
+
+    }
+
+    &[data-background="true"] {
+
+        .photo-username, .dataset {
+            border-radius: 12px;
+            padding: 12px;
+            background-color: $light-grey-3;
+        }
+
+    }
+
+}

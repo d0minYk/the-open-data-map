@@ -1,0 +1,8 @@
+{
+  "name": "theOpenDataMap",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "proxy": "http://localhost:8080"
+}

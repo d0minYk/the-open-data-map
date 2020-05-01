@@ -1,0 +1,44 @@
+@import "./Colors.scss";
+
+.reports-container {
+
+    ion-select {
+        border-radius: 4px;
+        margin-top: 12px;
+        background-color: $light-grey-4;
+    }
+
+    .swiper-wrapper {
+        padding-bottom: 28px;
+
+        .swiper-slide {
+            // margin-right: 15px;
+
+            .report {
+                height: 200px;
+                overflow: auto;
+
+                .cause {
+                    font-weight: 600;
+                    margin-top: 12px;
+                }
+
+                .body {
+                    margin-top: 4px !important;
+                }
+
+            }
+
+        }
+
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-pagination {
+        bottom: 0;
+    }
+
+}

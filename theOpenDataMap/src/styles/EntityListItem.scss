@@ -1,0 +1,69 @@
+@import "./Colors.scss";
+
+.entity-list-item {
+
+    ion-thumbnail {
+        width: 40px;
+        height: 40px;
+
+        &>div {
+            border-radius: 100%;
+            width: 100%;
+            height: 100%;
+            padding: 8px;
+            text-align: center;
+        }
+
+    }
+
+    ion-label h2 span {
+        margin-left: 0;
+    }
+
+    .new {
+        position: absolute;
+        top: 2px;
+        left: 23px;
+        background-color: $purple-primary;
+        color: white;
+        padding: 2px 6px;
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.52em;
+    }
+
+    .comment, .rating, .share, .report, .like {
+        background-color: whitesmoke;
+        border-radius: 5px;
+        padding: 10px;
+        line-height: 1;
+
+        .user-badge {
+            margin: 0 0 10px 0;
+        }
+
+        .stars {
+            margin-bottom: 4px;
+        }
+
+        &.like {
+
+            .user-badge {
+                margin-bottom: 0;
+            }
+
+        }
+
+        &.report {
+
+            &>div:first-child {
+                font-weight: 500;
+                margin-bottom: 8px;
+            }
+
+        }
+
+    }
+
+}

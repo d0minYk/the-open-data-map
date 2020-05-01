@@ -1,0 +1,19 @@
+@import "./Colors.scss";
+
+ion-modal.report-editor-modal {
+
+    .report {
+
+        ion-select {
+            margin-bottom: 15px;
+            background-color: $light-grey-3;
+            border-radius: 4px;
+        }
+
+        ion-textarea {
+            height: calc(100% - 56px);
+        }
+
+    }
+
+}

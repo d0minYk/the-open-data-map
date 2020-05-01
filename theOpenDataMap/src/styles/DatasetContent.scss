@@ -1,0 +1,14 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="dataset-content"] {
+
+    .no-results {
+        height: calc(100% - 60px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 1.2em;
+    }
+
+}

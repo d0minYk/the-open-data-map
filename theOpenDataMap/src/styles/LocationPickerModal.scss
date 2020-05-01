@@ -1,0 +1,64 @@
+@import "./Colors.scss";
+
+.location-picker-modal {
+
+    &>.container {
+        height: 100%;
+    }
+
+    ion-fab {
+        width: calc(100% - 20px);
+
+        ion-fab-button {
+            display: inline-block;
+        }
+
+        ion-fab-button:nth-of-type(2) {
+            float: right;
+        }
+
+    }
+
+    .selected-address {
+        margin: 0 15px 15px 15px;
+        position: absolute;
+        top: 72px;
+        z-index: 2;
+        background-color: white;
+        border-radius: 5px;
+        padding: 12px;
+        width: calc(100% - 30px);
+        font-size: 0.9em;
+        box-shadow: $default-box-shadow-2;
+    }
+
+    .autocomplete-wrapper {
+        position: absolute;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        input {
+            margin: 15px 15px 0 15px;
+            width: calc(100% - 30px);
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: $default-box-shadow-2;
+        }
+
+    }
+
+    .map-container {
+        height: 100%;
+        position: relative;
+        z-index: 1;
+
+        &>div {
+            height: 100%;
+        }
+
+    }
+
+}

@@ -1,0 +1,89 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="location-editor"] {
+
+    .options {
+        display: flex;
+        margin: 15px;
+
+        .save-btn {
+            flex-basis: calc(100% - 60px);
+            flex-grow: 100;
+        }
+
+        .delete-btn {
+            flex-basis: 60px;
+            margin-right: 15px;
+        }
+
+        ion-button {
+
+        }
+
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 1.2em;
+        margin: 15px 15px 0px 15px;
+    }
+
+    .location-type-picker {
+        display: flex;
+        padding: 15px 15px 0 15px;
+        justify-content: space-between;
+
+        div {
+            display: inline-block;
+            flex-basis: 33.3333%;
+            background-color: rgba(0,0,0,0.05);
+            text-align: center;
+            padding: 12px;
+            border-radius: 8px;
+            margin-right: 12px;
+            display: flex;
+            justify-content: center;
+
+            ion-icon {
+                margin-right: 4px;
+            }
+
+            &:nth-child(3) {
+                margin-right: 0;
+            }
+
+            &[data-selected="true"] {
+                background-color: rgba(0,0,0,0.2);
+            }
+
+        }
+
+    }
+
+    .add-btn {
+        margin: 15px;
+    }
+
+    .tag-suggestions {
+        padding-left: 20px;
+        margin-top: 8px;
+
+        ion-chip {
+            margin-bottom: 0;
+        }
+
+    }
+
+    .locations-str {
+        margin: 15px;
+    }
+
+    .licence-disclaimer {
+        text-align: center;
+        font-weight: 300;
+        font-size: 0.9em;
+        margin: 15px;
+        text-decoration: underline;
+    }
+
+}

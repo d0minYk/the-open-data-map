@@ -1,0 +1,110 @@
+@import "./Colors.scss";
+
+.swipeable-drawer-body[data-drawer="map-location-details"] {
+    padding: 0 15px;
+
+    // padding: 20px;
+
+    // h2 {
+    //     padding: 15px 15px 0 15px;
+    // }
+    //
+    // .save-btn {
+    //     margin: 15px 15px 0 15px;
+    // }
+
+    ion-list {
+        height: 150px;
+        transition: 0.3s all;
+        overflow: auto;
+        margin-bottom: 0;
+        padding-bottom: 15px;
+
+        &[data-scrolled-status="expanded"] {
+            height: calc(100vh - 120px);
+        }
+
+    }
+
+    h1 {
+        font-size: 1.4em;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    h2 {
+        font-weight: 400;
+        font-size: 1em;
+        margin-bottom: 8px;
+    }
+
+    .outside-actions {
+
+        .action-btn {
+            border: black 1px solid;
+            display: inline-block;
+            border-radius: 52px;
+            color: black;
+            text-decoration: none;
+            padding: 4px 8px;
+            margin: 0 8px 8px 0;
+            display: inline-flex !important;
+
+            ion-icon {
+                font-size: 1em;
+                color: black;
+            }
+
+            label {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.72em;
+                margin-left: 6px;
+            }
+
+        }
+
+    }
+
+    h3 {
+        font-size: 0.9em;
+        margin-top: 16px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .field {
+
+    }
+
+    ion-chip {
+        background: transparent;
+        border: 1;
+        border: 1px solid $light-black-2;
+        color: $light-black-2;
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 8px;
+        margin-bottom: 8px;
+        text-transform: capitalize;
+    }
+
+    ion-item {
+        --min-height: unset !important;
+
+        &:first-of-type {
+
+            ion-label {
+                margin-top: 0;
+            }
+
+        }
+
+        h2 {
+            margin-bottom: 8px;
+        }
+
+    }
+
+}

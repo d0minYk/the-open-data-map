@@ -1,0 +1,45 @@
+@import "./Colors.scss";
+
+.ion-page[data-page="error"] {
+
+    .error-container {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $purple-primary;
+
+        .error {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            max-width: 360px;
+
+            h2 {
+                font-weight: 700;
+                font-size: 2.4em;
+                margin-bottom: 16px;
+            }
+
+            p {
+                font-size: 1.6em;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            button {
+                display: inline-block;
+                background: white;
+                color: $purple-primary;
+                padding: 12px 20px;
+                border-radius: 52px;
+                font-weight: 700;
+                font-size: 1em;
+                text-transform: uppercase;
+            }
+
+        }
+
+    }
+
+}

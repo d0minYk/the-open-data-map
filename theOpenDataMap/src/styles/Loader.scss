@@ -1,0 +1,20 @@
+@import "./Colors.scss";
+
+.full-screen-loader {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+
+    .spinner-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+
+        circle {
+            stroke: $purple-primary !important;
+        }
+
+    }
+
+}
