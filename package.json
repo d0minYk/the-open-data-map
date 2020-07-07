@@ -34,7 +34,7 @@
     "node-cron": "^2.0.3",
     "nodemailer": "^6.4.2",
     "nodemon": "^2.0.1",
-    "npm": "^6.14.1",
+    "npm": "^6.14.6",
     "object-hash": "^2.0.1",
     "parse-kml": "^1.0.1",
     "parse-kmz": "^1.0.0",
