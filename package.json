@@ -41,7 +41,7 @@
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "pg": "^7.14.0",
-    "read-excel-file": "^4.0.5",
+    "read-excel-file": "^4.1.0",
     "redis": "^3.0.2",
     "save": "^2.4.0",
     "shapefile": "^0.6.6",
